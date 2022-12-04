@@ -13,7 +13,7 @@ from rich.style import Style
 from rich.segment import Segment
 
 from .utils import flatten
-from .text_to_bitmap import Bitmap, Font as _Font
+from .text_to_image import Bitmap, Font as _Font
 
 from PIL import Image
 
