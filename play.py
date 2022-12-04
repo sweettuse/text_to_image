@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from text_to_bitmap import Face, Font
+from text_to_image import Face, Font
 from rich.color import Color
 from rich.color_triplet import ColorTriplet
 from rich.segment import Segment
@@ -13,7 +13,7 @@ def _play():
     # print(fnt.to_str('hello'))
     # print(Color.parse('yellow').get_truecolor())
     print(fnt.to_rich('12:40'))
-    print(fnt.to_rich('12:39'))
+    print(fnt.to_rich('10:39'))
     # print(fnt.to_rich('hello', height=40))
     return
     fnt = load_font('Courier New.ttf', 13)
