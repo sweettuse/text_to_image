@@ -31,12 +31,12 @@ class Face(Enum):
     menlo = "Menlo.ttc"
     papyrus = "Papyrus.ttc"
 
-    def explore(self, size_range: range = range(6, 30)):
+    def explore_sizes(self, size_range: range = range(6, 30)):
         """print out dimensions for a particular face in a range of sizes"""
         face_name = self.value
         print(face_name)
         for size in size_range:
-            fnt = _load_font(face_name, size)
+            fnt = _load_font(Font(self, size))
             print(size, fnt.text_dimensions(string.printable))
         print(face_name)
 

@@ -1,26 +1,22 @@
-from __future__ import annotations
-
 from text_to_image import Face, Font, emojify_text, explore_emojify_text
-from rich.color import Color
-from rich.color_triplet import ColorTriplet
-from rich.segment import Segment
-from rich.style import Style
 from rich import print
-from text_to_image.emoji import emojify_text, explore_emojify_text
+from rich.color import Color
 
-def _play():
-    # Single characters
-    explore_emojify_text('hello', emoji='saxophone')
-    print(emojify_text('hi', font=Font(Face.courier_new, 8)))
-    fnt = Font(Face.courier_new, 20)
-    # print(fnt.to_str('hello'))
-    # print(Color.parse('yellow').get_truecolor())
-    # print(fnt.to_rich('12:40'))
-    # print(fnt.to_rich('10:39'))
-    # print(fnt.to_rich('hello', height=40))
-    return
-    fnt = load_font('Courier New.ttf', 13)
-    ch = fnt.render_character('e')
+print()
+# simple terminal str
+print(Font(Face.menlo, 12).to_str('hello'))
 
-if __name__ == '__main__':
-    _play()
+# with color using rich
+print(Font(Face.menlo, 12).to_rich('hello', color=Color.parse('purple')))
+
+# emojify text
+print(emojify_text('what a great font', font=Font(Face.comic_sans, 12), emoji='saxophone'))
+
+# emojify text more!
+print(emojify_text('what a great font', font=Font(Face.comic_sans, 12), emoji='saxophone', flip=True))
+
+# create an image
+im = Font(Face.typewriter, 100).to_image('hello!')
+im.show()
+
+print()

@@ -3,7 +3,7 @@ convert text to bitmaps, images, rich, etc
 
 it's kinda hard to take plain text and render it in a font as an image. this helps with that.
 
-(hat tip to dbader for the hard part - i just added the fun stuff)
+(hat tip to @dbader for the hard part - i just added the fun stuff)
 
 so, e.g. 
 
