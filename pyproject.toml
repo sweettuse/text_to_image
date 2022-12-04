@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "text-to-image"
+version = "0.1.0"
+description = "convert text to image, rich, emoji"
+authors = ["adam cushner <sweettuse@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "text_to_image"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+freetype-py = "^2.3.0"
+rich = "^12.6.0"
+Pillow = "^9.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
