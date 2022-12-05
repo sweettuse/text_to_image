@@ -18,7 +18,7 @@ from .text_to_image import Bitmap, Font as _Font
 from PIL import Image
 
 
-FONT_PATH = Path(__file__).parent.parent / "fonts"
+FONT_PATH = Path(__file__).parent / "fonts"
 
 
 class Face(Enum):
